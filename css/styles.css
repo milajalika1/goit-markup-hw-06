@@ -382,11 +382,93 @@ img {
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
-    .main-section {
-        background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-          ),
-          url(../images/main-section/main-desctop@2x.jpg);
-      } 
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-section/main-desctop@2x.jpg);
+  }
+}
+
+/* ---------Features---------- */
+.features-item-wrapper {
+  display: none;
+}
+.features {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.features-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+.features-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.features-desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .features-subtitle {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .features-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+  .features-item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+  }
+  .features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .features-desc {
+    font-weight: 400;
+      }
 }

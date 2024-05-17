@@ -688,7 +688,7 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  }
+}
 .social-media-text {
   font-weight: 500;
   font-size: 16px;
@@ -719,6 +719,9 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 72px;
+}
+.subscibe-container {
+  display: flex;
   
 }
 .subscibe-form-input {
@@ -727,14 +730,18 @@ img {
   width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-opacity: 0.3;
+  opacity: 0.3;
+  background-color: transparent;
+  padding-bottom: 16px;
+}
+.subscibe-form-input::placeholder {
+  opacity: 0.6;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
-    background-color: transparent;
-    padding-bottom: 16px;
+
 }
 .subscibe-button {
   border-radius: 4px;

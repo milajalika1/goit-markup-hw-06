@@ -801,6 +801,9 @@ img {
   .container-footer-social {
     align-items: start;
   }
+  .subscibe-form-input {
+    width: 264px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .page-footer {
@@ -809,5 +812,13 @@ img {
   }
   .container-wrapper {
     flex-wrap: nowrap;
+    padding-left: 16px;
+  }
+  .subscibe-container {
+    margin-left: 80px;
+  }
+  .container-footer {
+    min-width: 264px;
+    margin-right: 120px;
   }
 }
